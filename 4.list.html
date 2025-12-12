@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- 定義文件類型為 HTML5 -->
+<html lang="zh-tw"> <!-- 設定語言為繁體中文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 設定字符編碼為 UTF-8 -->
+    <title>HTML 清單標籤說明</title>
+</head>
+<body>
+    <!-- ul 與 li：無序清單 -->
+    <h2>無序清單 (ul)</h2>
+    <p>使用 <b>&lt;ul&gt;</b> 標籤建立無序清單，<b>&lt;li&gt;</b> 標籤代表清單項目：</p>
+    <ul>
+        <li>第一項</li>
+        <li>第二項</li>
+        <li>第三項</li>
+    </ul>
+
+    <!-- ol 與 li：有序清單 -->
+    <h2>有序清單 (ol)</h2>
+    <p>使用 <b>&lt;ol&gt;</b> 標籤建立有序清單，<b>&lt;li&gt;</b> 標籤代表清單項目：</p>
+    <ol>
+        <li>第一步</li>
+        <li>第二步</li>
+        <li>第三步</li>
+    </ol>
+
+    <!-- ol start 屬性：設定起始數字 -->
+    <h2>有序清單的起始數字 (start)</h2>
+    <p>透過 <b>start</b> 屬性可設定有序清單的起始編號：</p>
+    <ol start="5">
+        <li>第 5 項</li>
+        <li>第 6 項</li>
+        <li>第 7 項</li>
+    </ol>
+
+    <!-- li value 屬性：設定特定項目的數字 -->
+    <h2>li 的數值屬性 (value)</h2>
+    <p>使用 <b>value</b> 屬性，可以設定特定項目的編號：</p>
+    <ol>
+        <li value="10">第 10 項</li>
+        <li>第 11 項 (自動遞增)</li>
+        <li value="15">第 15 項</li>
+    </ol>
+
+    <!-- ol type 屬性：設定編號類型 -->
+    <h2>有序清單的類型 (type)</h2>
+    <p>透過 <b>type</b> 屬性設定不同的編號類型：</p>
+    <ol type="1"> <!-- 數字編號 -->
+        <li>數字編號 1, 2, 3...</li>
+    </ol>
+    <ol type="A"> <!-- 大寫英文字母 -->
+        <li>大寫字母 A, B, C...</li>
+    </ol>
+    <ol type="a"> <!-- 小寫英文字母 -->
+        <li>小寫字母 a, b, c...</li>
+    </ol>
+    <ol type="I"> <!-- 羅馬數字大寫 -->
+        <li>羅馬數字 I, II, III...</li>
+    </ol>
+    <ol type="i"> <!-- 羅馬數字小寫 -->
+        <li>羅馬數字 i, ii, iii...</li>
+    </ol>
+
+    <!-- dl 與 dt、dd：定義清單 -->
+    <h2>定義清單 (dl, dt, dd)</h2>
+    <p>使用 <b>&lt;dl&gt;</b> (定義清單)，<b>&lt;dt&gt;</b> (定義標題) 和 <b>&lt;dd&gt;</b> (定義描述)：</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>超文本標記語言，用來建立網頁。</dd>
+
+        <dt>CSS</dt>
+        <dd>階層式樣式表，用來設計網頁樣式。</dd>
+
+        <dt>JavaScript</dt>
+        <dd>網頁的程式語言，用於增加互動效果。</dd>
+    </dl>
+</body>
+</html>

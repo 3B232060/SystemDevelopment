@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!-- 定義文件類型為 HTML5 -->
+<html lang="zh-tw"> <!-- 設定語言為繁體中文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 設定字符編碼為 UTF-8 -->
+    <title>HTML 錯誤標籤與屬性範例</title>
+</head>
+<body>
+    <!-- target 屬性：控制超連結打開的方式 -->
+    <h2>target 屬性範例</h2>
+    <p>超連結可以透過 <b>target</b> 屬性設定打開方式：</p>
+    <ul>
+        <li><a href="https://www.example.com" target="_self">_self：在當前視窗打開 (預設)</a></li>
+        <li><a href="https://www.example.com" target="_blank">_blank：在新視窗/分頁打開</a></li>
+        <li><a href="https://www.example.com" target="_parent">_parent：在父框架中打開</a></li>
+        <li><a href="https://www.example.com" target="_top">_top：在最外層框架打開</a></li>
+    </ul>
+
+    <!-- 路徑：絕對路徑與相對路徑 -->
+    <h2>路徑範例</h2>
+    <p>超連結或圖片會使用 <b>路徑</b> 指定位置：</p>
+    <!-- 絕對路徑 -->
+    <p>絕對路徑 (完整網址)：</p>
+    <a href="https://www.example.com">前往 Example 網站</a>
+
+    <!-- 相對路徑 -->
+    <p>相對路徑：</p>
+    <a href="images/pic.jpg">顯示圖片</a>
+
+    <!-- #bookmark id：書籤連結 -->
+    <h2 id="bookmark-example">#bookmark 書籤範例</h2>
+    <p>使用 `id` 建立書籤，可以跳轉到同頁面指定位置。</p>
+    <a href="#bookmark-example">跳到本段落標題</a>
+
+    <!-- address：顯示聯絡資訊 -->
+    <h2>address 標籤範例</h2>
+    <p>使用 <b>address</b> 標籤標示聯絡資訊：</p>
+    <address>
+        聯絡我：<br>
+        Email: example@example.com<br>
+        地址：台北市中正區忠孝西路一段<br>
+        電話：02-1234-5678
+    </address>
+
+    <!-- download 屬性：提供下載連結 -->
+    <h2>download 屬性範例</h2>
+    <p>使用 <b>download</b> 屬性可提供檔案下載：</p>
+    <a href="files/sample.pdf" download="範例文件.pdf">下載 PDF 文件</a>
+</body>
+</html>

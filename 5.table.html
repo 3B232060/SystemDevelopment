@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!-- 定義文件類型為 HTML5 -->
+<html lang="zh-tw"> <!-- 設定語言為繁體中文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 設定字符編碼 -->
+    <title>HTML 表格標籤說明</title>
+</head>
+<body>
+    <!-- table: 表格標籤 -->
+    <h2>表格 (table) 範例</h2>
+    <table border="1" width="500" height="200"> <!-- border 設定邊框，width 和 height 設定寬高 -->
+        <!-- caption: 表格標題 -->
+        <caption><b>期中成績表</b></caption>
+        
+        <!-- thead: 表格標頭 -->
+        <thead style="background-color: lightgray;">
+            <tr> <!-- tr: 表格中的一列 -->
+                <th>姓名</th> <!-- th: 表格標題欄 (粗體且置中) -->
+                <th>數學</th>
+                <th>英文</th>
+                <th>自然</th>
+            </tr>
+        </thead>
+        
+        <!-- tbody: 表格主體 -->
+        <tbody>
+            <tr>
+                <td>小明</td> <!-- td: 表格儲存格 -->
+                <td>85</td>
+                <td>90</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>小華</td>
+                <td>92</td>
+                <td>88</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>小美</td>
+                <td>80</td>
+                <td>85</td>
+                <td>88</td>
+            </tr>
+        </tbody>
+        
+        <!-- tfoot: 表格結尾 -->
+        <tfoot style="background-color: lightyellow;">
+            <tr>
+                <td colspan="4" align="center"> <!-- colspan: 合併儲存格，跨 4 欄 -->
+                    以上成績僅供參考
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- rowspan: 合併行 -->
+    <h2>rowspan 屬性範例</h2>
+    <table border="1" width="300">
+        <tr>
+            <th>星期</th>
+            <th>時間</th>
+        </tr>
+        <tr>
+            <td rowspan="2">星期一</td> <!-- rowspan: 合併 2 行 -->
+            <td>上午 9 點</td>
+        </tr>
+        <tr>
+            <td>下午 3 點</td>
+        </tr>
+    </table>
+
+    <!-- colgroup 與 col: 設定欄樣式 -->
+    <h2>colgroup 與 col 標籤範例</h2>
+    <table border="1" width="400">
+        <!-- 定義欄樣式 -->
+        <colgroup>
+            <col style="background-color: lightblue;"> <!-- 第一欄背景色 -->
+            <col style="background-color: lightgreen;"> <!-- 第二欄背景色 -->
+        </colgroup>
+        <tr>
+            <th>姓名</th>
+            <th>分數</th>
+        </tr>
+        <tr>
+            <td>小明</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>小華</td>
+            <td>92</td>
+        </tr>
+    </table>
+</body>
+</html>

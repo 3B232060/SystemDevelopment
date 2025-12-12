@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- 定義文件類型為 HTML5 -->
+<html lang="zh-tw"> <!-- 設定網頁語言為繁體中文 -->
+<head>
+    <meta charset="UTF-8"> <!-- 設定字符編碼為 UTF-8 -->
+    <title>IMG 標籤範例</title>
+</head>
+<body>
+    <!-- 主標題 -->
+    <h1>IMG 標籤的使用範例</h1>
+
+    <!-- 圖片顯示 -->
+    <h2>1. 基本圖片範例</h2>
+    <p>顯示一張圖片，使用 `src` 指定圖片來源：</p>
+    <img src="https://via.placeholder.com/300x200" alt="示例圖片" width="300" height="200">
+    <!--
+        說明：
+        - src：圖片來源，可以是相對路徑或絕對網址。
+        - alt：圖片的替代文字，當圖片無法顯示時會顯示這段文字。
+        - width：設定圖片寬度 (單位為像素)。
+        - height：設定圖片高度 (單位為像素)。
+    -->
+
+    <h2>2. 使用圖片標註說明</h2>
+    <p>圖片下方加上標註說明：</p>
+    <figure>
+        <img src="https://via.placeholder.com/150" alt="範例圖示" width="150" height="150">
+        <figcaption>這是一個示例圖片，使用 figcaption 標註。</figcaption>
+    </figure>
+    <!-- 
+        說明：
+        - figure：圖片與標註的組合標籤。
+        - figcaption：提供圖片的標註或描述。
+    -->
+
+    <h2>3. 設定圖片連結</h2>
+    <p>點擊圖片開啟另一個連結：</p>
+    <a href="https://www.example.com" target="_blank">
+        <img src="https://via.placeholder.com/200" alt="點擊連結的圖片" width="200">
+    </a>
+    <!--
+        說明：
+        - a：超連結標籤。
+        - target="_blank"：點擊後在新視窗開啟連結。
+        - img 放置在 a 標籤內，使圖片成為可點擊的連結。
+    -->
+
+    <h2>4. 無法顯示圖片時的替代文字</h2>
+    <p>當圖片路徑錯誤或不存在時，顯示替代文字：</p>
+    <img src="nonexistent_image.png" alt="圖片未找到，顯示替代文字" width="200">
+
+    <h2>5. 設定圖片背景顏色 (使用 CSS)</h2>
+    <p>圖片背景顏色與樣式可以透過 CSS 設定：</p>
+    <img src="https://via.placeholder.com/200" alt="CSS 背景圖片" style="background-color: lightblue; border: 2px solid black;">
+
+</body>
+</html>

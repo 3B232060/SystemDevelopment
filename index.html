@@ -16,6 +16,10 @@
 
     <!-- 顯示使用者相關資料的區塊 -->
     <div id="user"></div>
+
+    <input type="text" id="name" placeholder="name">
+    <input type="text" id="age" placeholder="age">
+    <button onclick="user.showMsg()">問候</button>
     <!-- 載入 person.js -->
     <script src="person.js"></script>
 
@@ -26,16 +30,24 @@
 
     <!-- 按鈕，按下後新增內容到 container -->
     <button id="addBotton">快點按我</button>
-
     <!-- 動態加入元素的容器 -->
     <div id="container"></div>
     <!-- 載入 addBotton.js，新增 "給我錢" 的按鈕 -->
     <script src="addBotton.js"></script>
+    <br>
 
     <!-- 頁面上會顯示這段文字
     bilibala lelele lololo lululu meowww -->
+
+    <hr style="height:3px; background-color:rgb(116, 6, 241); border:none;">
+    <br>
+
+    <!-- 12/19 -->
+    <script src="test.js"></script>
+
+    <input type="text" id="userName" placeholder="輸入名字">
+    <button onclick="greetUser()">確認</button>
+    <p id="resultUser"></p>
 </body>
 
 </html>
-
-
